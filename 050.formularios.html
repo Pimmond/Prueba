@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./assets/mexican-skull-svgrepo-com_blanco.svg"
+      type="image x-icon"
+    />
+    <link rel="stylesheet" href="./style_formularios.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="/"
+      method="get"
+      target="_self"
+      enctype="application/x-www-form-urlencoded"
+      accept-charset="UTF-8"
+      autocomplete="off"
+      novalidate
+    >
+      <label for="mail">Introduce tu mail</label
+      ><input type="email" id="mail" name="mail" />
+      <label for="password">Introduce tu password</label>
+      <input type="password" />
+      <button type="submit">Enviar</button>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        size="70"
+        placeholder="usuario@dominio.com"
+      />
+      <label for="avengers">Elige una opción:</label>
+
+      <select name="avengers" id="avengers">
+        <option value="thor">Thor</option>
+        <option value="hulk">Hulk</option>
+        <option value="ironman">Ironman</option>
+      </select>
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <link rel="stylesheet" href="./styles.css" />
+          <title>Footer</title>
+        </head>
+
+        <body>
+          <select name="ciudad">
+            <optgroup label="Europa">
+              <option>Madrid</option>
+              <option>Londres</option>
+              <option>Paris</option>
+            </optgroup>
+            <optgroup label="Suramerica">
+              <option>Santiago</option>
+              <option>Sao Paulo</option>
+              <option>Lima</option>
+              <option>Bogota</option>
+            </optgroup>
+            <optgroup label="Africa">
+              <option>Casablanca</option>
+              <option>Ciudad del Cabo</option>
+            </optgroup>
+          </select>
+        </body>
+      </html>
+    </form>
+    <form name="formulario" method="post" action="/send.php">
+      <!-- Campo de texto combinado con lista de opciones -->
+      <input type="text" list="items" />
+      <!-- Lista de opciones -->
+      <datalist id="items">
+        <option value="1">Opción 1</option>
+        <option value="2">Opción 2</option>
+        <option value="3">Opción 3</option>
+      </datalist>
+    </form>
+    <form name="formulario" method="post" action="http://mipagina/send.php">
+      <!-- Selección de color -->
+      Selecciona el color deseado:
+      <input type="color" name="color" value="#FF0000" />
+      <input type="file" id="identificador" value="valor" name="nombre" />
+    </form>
+    <form action="/next-page" method="post">
+      <fieldset>
+        <legend>Datos Básicos</legend>
+      </fieldset>
+    </form>
+    <form method="post" action="/user">
+      <label for="nick">nickName:</label>
+      <input
+        type="text"
+        name="nick"
+        placeholder="Su nick"
+        minlength="2"
+        maxlength="8"
+      />
+      <button type="submit">Enviar</button>
+    </form>
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" disabled /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" />
+    </form>
+    <form method="post" action="/register">
+      <label for="nombre">Usuario:</label>
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Name"
+        minlength="5"
+        maxlength="40"
+        required
+        pattern="[A-Za-z0-9]+"
+      />
+      <button type="submit">Registrarse</button>
+    </form>
+  </body>
+</html>

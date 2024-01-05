@@ -1,0 +1,66 @@
+<!--Ejemplos de clase de formularios de prework-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form action="/action.php" method="post" name="Subir piso">
+      <div>
+        <label for="name">Nombre: </label>
+        <input id="name" value="Nickname" />
+      </div>
+      <br />
+      <div>
+        <input id="hidden" type="hidden" value="Spain" />
+      </div>
+      <div>
+        <label for="age">Tu fecha de nacimiento: </label>
+        <input id="age" type="date" />
+      </div>
+      <br />
+      <div>
+        <label for="check">Acepto los términos</label>
+        <input id="check" type="checkbox" required />
+      </div>
+      <br />
+      <div>
+        <label for="color">Elige tu color favorito: </label>
+        <input id="color" type="color" />
+      </div>
+      <br />
+      <div>
+        <label for="hour"
+          >Para confirmar que no eres un robot, elige la hora actual:
+        </label>
+        <input id="hour" type="time" />
+      </div>
+      <br />
+      <div>
+        <label for="dni">Introduce tu DNI: </label>
+        <input id="dni" type="number" min="99999999" min="9999999" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Tu email: </label>
+        <input id="email" type="email" placeholder="tuemail@dominio.com" />
+      </div>
+      <br />
+      <div>
+        <label for="photo">Pon las fotos de tu casa: </label>
+        <input id="photo" type="file" multiple />
+      </div>
+      <br />
+      <div>
+        <label for="password">Introduce tu contraseña: </label>
+        <input id="password" type="password" />
+      </div>
+      <br />
+      <!--El reset se puede poner como input o como button y es EXACTAMENTE lo mismo!       <input type="reset" value="Limpiar formulario" />-->
+      <button type="reset">Limpiar formulario</button>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
